@@ -1,3 +1,4 @@
+# This is a script used to merge the two data sets together AFTER using Business ID Preprocessing and Review Text Preprocessing
 import json
 import pandas as pd
 
