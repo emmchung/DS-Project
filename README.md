@@ -10,7 +10,7 @@ Pandas,
   * README.md
   * Data: Initial & Final data sets
     * README.md : Data Establishment
-    * Raw
+    * sitdown_reviews.csv: raw data file
   * Scripts : contains all source code for the project. 
     * Business ID Preprocessing
     * Review Text Preprocessing
