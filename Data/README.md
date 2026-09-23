@@ -10,4 +10,9 @@ Yelp permits use and modification of the dataset for non-commercial educational 
 The Yelp Open Dataset contains publicly available, user-generated reviews, but the text may reflect subjective opinions, demographic differences, cultural expectations, and other biases in who chooses to leave reviews. We will not use user-identifying information as model features and will focus on restaurant-level rather than individual-level conclusions. We will also acknowledge that Yelp reviewers may not be representative of all restaurant customers. 
 ## Data Dictionary
 
+| Variable | Type | Description | Uncertainties
+| -------- | -------- | -------- |
+| review_id | string | Identifier for each Yelp review | Treat as an identifier rather than a numeric value. |
+| user_id | string | Unique identifier for the Yelp user who wrote the review | Identifies the reviewer but does not provide demographic information. Multiple reviews may come from the same user. |
+
 ## Exploratory Plots 
