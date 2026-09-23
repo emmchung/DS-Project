@@ -1,0 +1,622 @@
+Original number of rows: 32000
+Rows after dropping missing text/stars: 32000
+Number of unique reviews: 32000
+
+Star rating counts and percentages:
+  1: 3125 (9.77%)
+  2: 2740 (8.56%)
+  3: 3881 (12.13%)
+  4: 8936 (27.92%)
+  5: 13318 (41.62%)
+
+Aspect mention summary:
+  quality: 25273 (78.98%)
+  price: 9716 (30.36%)
+  convenience: 16874 (52.73%)
+
+Random review examples for each aspect:
+
+--- Quality examples ---
+Star rating: 4
+If you've never visited Eats, you are missing out. I judge ever place by their burgers and Eats does not disappoint. The V-Jack is a gut busting, juice dripping, artery clogging, tongue pleasing work of art. Two real beef patties, BBQ pork, cheese and BACON. It's just incredible.. The apps are super tasty as well.
+We've always experienced superb service by a fun group of waitstaff. The kind of waitstaff that actually enjoy their jobs and make you feel extremely comfortable.
+---
+Star rating: 5
+Awesome service, great staff and amazing food. My new favorite spot.  I walked in got sitting right away by a friendly staff. The waiter was super nice and continued to check on my table the entire time. Oh! And let's not forget I received my food super fast
+---
+Star rating: 5
+To paraphrase Dick Nixon, I want to make one thing perfectly clear: I love seafood places at shore towns that have a) great food, b) bait, tackle, hooks all over the walls, c) over-abundance of anchors or nautical equipment positioned around the joint.
+
+DiNardo's Famous Crabs in Old City Philly has the "lure" (pun intended) of some awesome seafood places I've enjoyed in Panama City Beach, FL; Ocean City, MD; and the Jersey Shore and combines the three above-mentioned attributes to produce a great experience.
+
+I had the blackened cajun red snapper with their "world famous" fries and coleslaw. The only better cajun blackened snapper I've had was at the old Orleans House in Arlington, VA. The table featured a bunch of great lures shaped like fish, sailors, and more. Two tables over was an authentic nautical wheel. The topper was the crab bib that I wore througout the meal.
+---
+Star rating: 3
+Bravo sits in a fun area of Wayne--right off Lancaster Ave, which can be pretty busy at the dinnertime hour, on a slightyl less busy street. Parking is still something to consider before 6:00 when you have to feed the meter, but all in all, it's still a good experience.
+
+The pizza is good. It's a little on the greasy side, but overall, good cheese, good sauce, good toppings, good crust. Good stuff, not excellent. The restaurant itself is very well maintained.
+---
+Star rating: 5
+I went to the old Sunset Grille location at sunrise this morning to give Biscuit Love a try. I shared several intimate lunches over the years at Sunset Grille with native Nashvillian, John Siegenthaler. So the location holds special memories for me. I was apprehensive about visiting the "super hip" and "trendy" Biscuit Love for fear of having to stand in line with tourists and hipsters with their beards w/ wool skullcaps that have become the rage in determining local restaurants success. I found neither. 
+
+The place was quiet, the staff super friendly and "loving". Reasonably priced, for Nashville, the food was awesome. The coffee was intense and I am sure sourced "locally". I really enjoyed it. As I sat there thinking about my last lunch with John, I could see that this would have been a place we would have enjoyed together. A win for the locals, the tourists, and the beards! Watch out Pancake Pantry, there is a new breakfast joint in "the Village"!
+---
+Star rating: 4
+I had big plans to get homemade ice cream at Crown Candy Kitchen, but never found the time. But through research, I heard that Ted Drewes was another must try in St. Louis and at the recommendation from my Forest Park friends, I headed there.
+
+It was packed! And the people didn't stop coming. I had to park like two streets over, on some curb illegally, walk through and alley to get here.  I worked my way through one of the lines, only to see twice as many people filling in behind me. It goes fast, don't worry!
+
+I asked around to figure out what to get and it was determined a concrete (much like a blizzard or blast) would be the best experience. I got the Fox Treat (fudge, raspberry and macadamia nuts). There is no pictured evidence of this treat because I got stuck in a traffic on my way to my hotel and it didn't last long. However, it was delicious. Ted Drewe's serves frozen custard and to me it was extra sweet.  Too sweet. Next time I'll probably stick with something more simple so I can get the true taste of the custard.  
+
+Oh, one other note.  The portions are HUGE. I think I ordered a small or medium or something. Whatever size I got I was shocked and asked if they got my order wrong. Nope! So, personally, I feel there is no need to splurge if you're feeling extra hungry. Pretty sure a small would have suit me just fine.
+---
+Star rating: 5
+Fun breakfast place, creative menu & excellent service. I highly recommend to all you foodies out there!
+---
+Star rating: 2
+This primos is probably the worst I have ever been to. Primos in general has great quality and delicious foods, this primo just flat out sucks. Their sandwiches were disappointing to say the least.
+---
+Star rating: 5
+A friend of my wife recommended Ice Cream 504 to her and so we checked it out.  Oh WOW!  Were we impressed with this place.  The "High Priest of Ice Cream", Michael, met us as we entered the shop and asked us if we would be interested in sampling his newest flavor.  Of course we said yes, because who turns down ice cream--especially free ice cream.  We tried the new flavor, a mixture of peanut butter, bananas, and honey, and found it to be incredible along with 10 other flavors--all great. 
+
+The ice cream at this place is as fresh as the ice cream you used to churn on your back porch on Sunday afternoons.  It's that fresh because Michael does it the old fashioned way, one small batch at a time.  Because of this attention to the old fashioned method, all of the flavors we sampled were amazing, even the basic chocolate was delicious.
+
+Ultimately, I chose a vanilla toffee/new flavor mixture in an in-house made waffle cone.  I considered two-scoops but stop before you attempt it.  What the High Priest calls "One scoop" on the menu is really two decent sized scoops.  
+
+If you go into this lovely shop, don't read the menu and go, "$4.25 FOR ONE SCOOP!".  You may say for that price you could get Ben & Jerry's.  B&J are going to sell you a bunch of preservatives and maybe some ice cream.  Ice Cream 504 is going to sell you an experience---and oh yeah, some GREAT ice cream.
+---
+Star rating: 1
+Basic old diner style food stuck in 70's...  Decor is beyond dated, but can be extremely retro and funky with just a little care and cleaning... Menu was laminated and greasy. Toast was lathered in artificial margarine tasting substance that didn't melt on the not so toasted white bread...  My cheese omelete left a whole lot to be desired. It was as thin as a crepe and over cooked. 
+
+There isn't much of a selection in the area for early morning breakfast, but I would go a little further south on 352 and hit up the McDonald's for breakfast next time.
+---
+
+--- Price examples ---
+Star rating: 1
+Would not recommend this place it was one of the worse meals I have eaten....very over priced the food had no flavor the coconut cake was very dry too..save your money.
+---
+Star rating: 3
+Cute place, good service, fair prices.  Not too Peruvian for most Americans, probably not too American for Peruvians.  Better-than-average food, too.
+---
+Star rating: 1
+We were VERY disappointed with West Side Gravy.  My fried chicken was two small legs and a thigh, all undercooked,  served in a paper cone, with very small sides of tasteless potato salad and so-so coleslaw.  My iced tea tasted sour.  My wife had the lobster roll which was quite small and tasted mediocre at best.  My son had a hamburger and fries which was fine.  The service was adequate, but nothing special.  Not worth the $50+ (plus tip).  We will not return . The big reason for our disappointment is the fact that The Blackbird Restaurant (attached) is run by the same chef, share the same kitchen and the Blackbird is terrific.
+---
+Star rating: 5
+Delicious food and friendly folks, no better combination ! John and I ordered 2 salads and the BiBimbap skillet to share. All food was fresh with lots of flavor. Crispy rice at bottom of skillet was divine. Definitely worth getting off interstate on road trip today a fabulous and healthy lunch.
+---
+Star rating: 3
+Mediocre at best. Service is so-so; pho should be hard to mess up but for the price, the meat was scant and the soup was not well seasoned. I'm used to getting spring rolls with delicious sauce that accompanies it, but there wasn't that here... may have been off day; I give every place 3 tries.
+---
+Star rating: 4
+I've given this place a lot of chances since my last review, and I've definitely been impressed with the changes. They've slightly revamped the interior decor, but not only that, the food has become significantly better! It was definitely a pleasant surprise, and I have been making this a regular spot for my family and I. Not only is it a convenient location (rather than going all the way to northeast Philly) for Korean BBQ, but this place definitely gets a higher level of sanitation compared to the ones in northeast Philly! I would go back here just for the salad you get when you order your meats! If only I can recreate that at home, I'd be eating that all day.
+
+I've bumped this place up to 4 stars because their food has gotten significantly better, and their prices aren't so ridiculous. I am always going home with leftovers for fourth meal! You will probably find me stuffing my face with kbbq there every other week!
+---
+Star rating: 4
+Alberto's was my go to place when I was still in school because it opens until midnight and it's cheap! Plus they have a 10% discount with a student ID and it still is one of my top choices for when I crave Mexican food! Horchata is always a must for me as theirs is not too sweet or taste like it's made from powder. I typically get the vegetarian burrito but this time I got the torta and loved it. Instead of the beans, because they are cooked in lard, they let me add whatever I wanted, so I did the rice and tomatoes. The bread is my favorite part- soft and aromatic. My boyfriend got the California burrito which is different than what the options most of the other Mexican restaurants offer: it comes with fries inside the burrito which sounds weird but is actually really good. The burrito is already salty but they add salt so depending on your preference, you may want to ask them to leave the added salt out.
+---
+Star rating: 1
+The donair meat was very cheap tasting....like it came out of a can or something gross.   The place looks run down.  We won't be back.  People who think this is the best donair have lived a very sheltered life in the land of donairs!  This is probably one of my worst ones!
+---
+Star rating: 4
+I've been here several times. The price is reasonable, food is quite good, and the service as well. I've always ordered take-out. One time I went, and the guy who normally takes my order wasn't there... Instead there were 2 ladies... I think one was the wife of the owner. Or something along those lines. Anyway they were nice but when I came back to pick up my order they handed me the wrong bag (someone else's order). They should have confirmed the contents, but frankly I should have as well, so I accept at least part of the blame. I ended up going all the way home before I realized the screw-up and came back. I wasn't angry but I was definitely hungry and super-annoyed. The two ladies were gracious and apologetic, and they even threw in a courtesy snack for my trouble.
+---
+Star rating: 5
+Best Italian food ever! The family owned place has wonderful service and the family is working there with their staff. The food is amazing, and the speed is faster then fast!! This place is defiantly worth 5 stars!
+---
+
+--- Convenience examples ---
+Star rating: 3
+This is my go-to sushi spot since it is located so close to home. I have had many great meals here but since the original chef has left, things have suffered. Sushi rolls are not very consistent being either skimpy and or falling apart. Ive been looking around and have tried a few other places out (Asuka in West Chester had some of the best rolls that I have had in a while. I won't give up yet. Just hoping that they get their act together since it's a nice place to visit.
+---
+Star rating: 4
+Was in West Chester for work and got into town around lunchtime.  Even though I had been to the area before I usually venture into downtown for food but decided to fire up yelp and take a look at options closer to the hotel.  Even though I'm spoiled by fantastic Mexican food in San Diego the reviews looked promising for El Limon so I went with it. I ultimately decided on sampling several of their tacos: the Al Pastor, Carne Asada, and Carnitas.  Overall I was pleased with my decision and absolutely loved their hot sauce...has some serious kick to it but very flavorful.  Service was friendly and I had no issues getting a table during the time I was there.  Also appears they are open pretty late so if I get in later in the future it's nice to know I'll have this option available.
+---
+Star rating: 4
+I really liked this cute little spot. I ordered a berry waffle with berries on the side, an order of bacon and an order of potatoes. My waffle was delicious and the potatoes were perfectly seasoned, the bacon was good also. My husband ordered the beast sandwich and potatoes and he said it was very good and all the veggies on it tasted fresh. My friend ordered the meat burrito and he said it was flavorful and filling. It was slightly pricey for breakfast, but the ingredients are good quality so I suppose it's worth it. I was a little grossed out by the padding on the chairs that were full of gross stains. The owners should really look into replacing it with leather or something that can be wiped off. Also, when it was time to order they were out of a lot things already...we came on a Monday around 11am.
+---
+Star rating: 5
+I had just moved to Nashville and one of my friends told me I HAD to come here. We're not both from here originally so technically we were still tourists at this point. Anyways, I went around 9:15 and the line wasn't too bad - I'd say a 5-10 minute wait. The food was awesome. I had the chocolate chip pancakes which were to die for. The sausage side I had didn't rock my world then again it's not the Side Dish Pantry. You don't pay at the table - they ring you up by the door to try and get people in and out fast which seems to work because the line is always moving fairly fast. 
+
+
+Rip : I drive by it almost every morning - if you want to avoid the line go either RIGHT when they open to around 7:15
+---
+Star rating: 4
+I've eaten take out from Enzo's before and dined there for the first time in Nov. The food (have had pasta dishes as well as pizza) is EXCELLENT  and the prices are fair. Unfortunately, the service was mediocre. The server seemed indifferent the entire time. I asked for item to be omitted from my pasta and they forgot to put it on the order to the kitchen. We asked for more rolls (whoops, "I forgot"), took forever to get a refill on sodas, and then presented the check without asking if we wanted desert (we did, but decided to go someplace else for an after dinner drink.) Hopefully this is just one bad apple because the food is great.
+---
+Star rating: 5
+I absolutely adore this place and the owner that runs it. I have never been given any bad service and I'm always welcomed warmly when I come in, whether I get something to eat or not. 
+
+I'm so glad that Bittersweet is in my neighborhood and that I can just walk down the street to it. 
+
+The food here is amazing. My favorite is the Peppadew Grilled Cheese and the unlimited refills of the Hibiscus Iced Tea. 
+
+Don't even get me started on the desserts. Fresh homemade cakes, cheesecakes, brownies, cookies, to satisfy any sweet tooth. Best desserts I've tasted in quite awhile, and I'm pretty particular about my sweets. 
+
+Everything savory and sweet here is prepared with the utmost loving care. 
+
+Need a new Eatery to visit? Well Bittersweet will definitely not disappoint. Get yourself down here and give it a try.
+---
+Star rating: 5
+St. Louis institution, lovely atmosphere and they have butterscotch... MMM!!!!  Friendly and fast service, and a great spot to people watch!
+---
+Star rating: 4
+A bit off the beaten path for most tourists, as it is in the Marigny, but worth the trip. Sure, the place is not perfect, but there are ultra-expensive restaurants in the FQ that are also not perfect. Look, cheap food, especially food this good, gives "wiggle" room for imperfections.
+
+Breakfast served all day is a bonus. Sometimes you just got to have a lox omelet (under $10) late in the day. The restaurant boasts vegetarian and *gasp* vegan dishes, but someone needs to tell them that cheese doesn't fit into either of those categories. That aside, the french fry poboy, and the mac 'n cheese sandwiches are amazing. So is the Saturday Blue Plate of BBQ Chicken legs. 
+
+Every entree is under $10, well except for the Friday Blue Plate, but why quibble? And who can argue with $5 Bloody Mary's, especially ones that are this good?
+---
+Star rating: 1
+Did a "Dinner on Don", we were hoping for great Indian a couple weeks ago. Checked out yelp and there were a lot of great reviews. It was downtown so I made reservations for it. Arrived around 6pm and there were only 3 tables full..the place was empty and we would soon find out why. We were quickly seated and ordered our food, took them about 40 minutes to get it out to us. The food was ok, but the price seriously! 1.50 for 1 nan! not for a basket or a few, but 1 skinny thin little nan!!! that was a bunch of crap! Would not recommend this place to a single soul!!!! The curry's were ok, I would have rather we go to the Indian restaurant on state and Glenwood! much better!!!!! 1.50 for Nan!!!!!
+---
+Star rating: 4
+Checked this spot out with work colleagues due to its convenient location to our work (we could walk & leave cars in parking garage!).
+
+Pleasantly blown away!
+
+Sicilian slice with pancetta & vidalia onions was unbelievably airy & done perfectly.
+
+Shared an Italian Caesar salad -- little heavy on dressing but loved the anchovies!
+
+Splurged & got the sweet cream & cappuccino soft serve twist -- we all devoured this in minutes! Dining partners loved the assortment of Italian cookies (I was in gluten coma & could not do any more dough!  Fell off my GF wagon for the night). 
+
+Would so come back again!
+
+Get here early ... We did thankfully; was packed by 6p.
+---
+
+Aspect sentiment examples (10 random samples per aspect):
+
+--- Quality sentiment examples ---
+Star rating: 4
+Relevant aspect text:
+The apps are super tasty as well.
+Sentiment score: 0.7184
+---
+Star rating: 5
+Relevant aspect text:
+Awesome service, great staff and amazing food. And let's not forget I received my food super fast
+Sentiment score: 0.7980
+---
+Star rating: 5
+Relevant aspect text:
+To paraphrase Dick Nixon, I want to make one thing perfectly clear: I love seafood places at shore towns that have a) great food, b) bait, tackle, hooks all over the walls, c) over-abundance of anchors or nautical equipment positioned around the joint. DiNardo's Famous Crabs in Old City Philly has the "lure" (pun intended) of some awesome seafood places I've enjoyed in Panama City Beach, FL; Ocean City, MD; and the Jersey Shore and combines the three above-mentioned attributes to produce a great experience. The topper was the crab bib that I wore througout the meal.
+Sentiment score: 0.6100
+---
+Star rating: 3
+Relevant aspect text:
+Good stuff, not excellent.
+Sentiment score: -0.0253
+---
+Star rating: 5
+Relevant aspect text:
+Reasonably priced, for Nashville, the food was awesome.
+Sentiment score: 0.6249
+---
+Star rating: 4
+Relevant aspect text:
+However, it was delicious. Next time I'll probably stick with something more simple so I can get the true taste of the custard. The portions are HUGE.
+Sentiment score: 0.4861
+---
+Star rating: 5
+Relevant aspect text:
+Fun breakfast place, creative menu & excellent service. I highly recommend to all you foodies out there!
+Sentiment score: 0.6730
+---
+Star rating: 2
+Relevant aspect text:
+Primos in general has great quality and delicious foods, this primo just flat out sucks.
+Sentiment score: 0.7430
+---
+Star rating: 5
+Relevant aspect text:
+The "High Priest of Ice Cream", Michael, met us as we entered the shop and asked us if we would be interested in sampling his newest flavor. We tried the new flavor, a mixture of peanut butter, bananas, and honey, and found it to be incredible along with 10 other flavors--all great. The ice cream at this place is as fresh as the ice cream you used to churn on your back porch on Sunday afternoons. It's that fresh because Michael does it the old fashioned way, one small batch at a time. Because of this attention to the old fashioned method, all of the flavors we sampled were amazing, even the basic chocolate was delicious. Ultimately, I chose a vanilla toffee/new flavor mixture in an in-house made waffle cone.
+Sentiment score: 0.4135
+---
+Star rating: 1
+Relevant aspect text:
+Basic old diner style food stuck in 70's...
+Sentiment score: -0.2500
+---
+
+--- Price sentiment examples ---
+Star rating: 1
+Relevant aspect text:
+Would not recommend this place it was one of the worse meals I have eaten....very over priced the food had no flavor the coconut cake was very dry too..save your money.
+Sentiment score: -0.7514
+---
+Star rating: 3
+Relevant aspect text:
+Cute place, good service, fair prices.
+Sentiment score: 0.8020
+---
+Star rating: 1
+Relevant aspect text:
+Not worth the $50+ (plus tip).
+Sentiment score: -0.1695
+---
+Star rating: 5
+Relevant aspect text:
+Definitely worth getting off interstate on road trip today a fabulous and healthy lunch.
+Sentiment score: 0.8658
+---
+Star rating: 3
+Relevant aspect text:
+Service is so-so; pho should be hard to mess up but for the price, the meat was scant and the soup was not well seasoned.
+Sentiment score: -0.4890
+---
+Star rating: 4
+Relevant aspect text:
+I've bumped this place up to 4 stars because their food has gotten significantly better, and their prices aren't so ridiculous.
+Sentiment score: 0.6766
+---
+Star rating: 4
+Relevant aspect text:
+Alberto's was my go to place when I was still in school because it opens until midnight and it's cheap!
+Sentiment score: 0.0000
+---
+Star rating: 1
+Relevant aspect text:
+The donair meat was very cheap tasting....like it came out of a can or something gross.
+Sentiment score: -0.4767
+---
+Star rating: 4
+Relevant aspect text:
+The price is reasonable, food is quite good, and the service as well.
+Sentiment score: 0.6478
+---
+Star rating: 5
+Relevant aspect text:
+This place is defiantly worth 5 stars!
+Sentiment score: 0.2942
+---
+
+--- Convenience sentiment examples ---
+Star rating: 3
+Relevant aspect text:
+This is my go-to sushi spot since it is located so close to home.
+Sentiment score: 0.0000
+---
+Star rating: 4
+Relevant aspect text:
+Even though I had been to the area before I usually venture into downtown for food but decided to fire up yelp and take a look at options closer to the hotel. Service was friendly and I had no issues getting a table during the time I was there.
+Sentiment score: -0.1134
+---
+Star rating: 4
+Relevant aspect text:
+It was slightly pricey for breakfast, but the ingredients are good quality so I suppose it's worth it.
+Sentiment score: 0.7647
+---
+Star rating: 5
+Relevant aspect text:
+Anyways, I went around 9:15 and the line wasn't too bad - I'd say a 5-10 minute wait. You don't pay at the table - they ring you up by the door to try and get people in and out fast which seems to work because the line is always moving fairly fast. Rip : I drive by it almost every morning - if you want to avoid the line go either RIGHT when they open to around 7:15
+Sentiment score: 0.0936
+---
+Star rating: 4
+Relevant aspect text:
+Unfortunately, the service was mediocre.
+Sentiment score: -0.3400
+---
+Star rating: 5
+Relevant aspect text:
+I have never been given any bad service and I'm always welcomed warmly when I come in, whether I get something to eat or not.
+Sentiment score: 0.1531
+---
+Star rating: 5
+Relevant aspect text:
+Friendly and fast service, and a great spot to people watch!
+Sentiment score: 0.8221
+---
+Star rating: 4
+Relevant aspect text:
+Breakfast served all day is a bonus.
+Sentiment score: 0.5423
+---
+Star rating: 1
+Relevant aspect text:
+We were quickly seated and ordered our food, took them about 40 minutes to get it out to us.
+Sentiment score: 0.0000
+---
+Star rating: 4
+Relevant aspect text:
+Checked this spot out with work colleagues due to its convenient location to our work (we could walk & leave cars in parking garage!).
+Sentiment score: -0.1260
+---
+
+Quality aspect sentiment correlation with stars:
+  Pearson correlation: 0.5190
+  Number of reviews used: 25273
+  Mean sentiment by star rating:
+    1: -0.0159
+    2: 0.1358
+    3: 0.2917
+    4: 0.4596
+    5: 0.5385
+
+Price aspect sentiment correlation with stars:
+  Pearson correlation: 0.3890
+  Number of reviews used: 9716
+  Mean sentiment by star rating:
+    1: -0.0052
+    2: 0.0986
+    3: 0.2470
+    4: 0.3699
+    5: 0.4440
+
+Convenience aspect sentiment correlation with stars:
+  Pearson correlation: 0.4583
+  Number of reviews used: 16874
+  Mean sentiment by star rating:
+    1: -0.0907
+    2: 0.0728
+    3: 0.2363
+    4: 0.3774
+    5: 0.4756
+
+Saved aspect sentiment bar plot to: MODEL_OUTPUT/aspect_sentiment_by_star.png
+
+Quality predicted aspect rating distribution:
+  1: 4599
+  2: 1927
+  3: 3702
+  4: 3514
+  5: 11531
+
+Price predicted aspect rating distribution:
+  1: 3038
+  2: 432
+  3: 1015
+  4: 830
+  5: 4401
+
+Convenience predicted aspect rating distribution:
+  1: 2477
+  2: 3431
+  3: 1566
+  4: 1527
+  5: 7873
+
+Random aspect rating validation examples:
+
+--- Quality rating examples ---
+Actual overall star rating: 4
+Relevant aspect text:
+The apps are super tasty as well.
+Sentiment score: 0.7184
+Predicted quality rating: 5
+---
+Actual overall star rating: 5
+Relevant aspect text:
+Awesome service, great staff and amazing food. And let's not forget I received my food super fast
+Sentiment score: 0.7980
+Predicted quality rating: 5
+---
+Actual overall star rating: 5
+Relevant aspect text:
+To paraphrase Dick Nixon, I want to make one thing perfectly clear: I love seafood places at shore towns that have a) great food, b) bait, tackle, hooks all over the walls, c) over-abundance of anchors or nautical equipment positioned around the joint. DiNardo's Famous Crabs in Old City Philly has the "lure" (pun intended) of some awesome seafood places I've enjoyed in Panama City Beach, FL; Ocean City, MD; and the Jersey Shore and combines the three above-mentioned attributes to produce a great experience. The topper was the crab bib that I wore througout the meal.
+Sentiment score: 0.6100
+Predicted quality rating: 5
+---
+Actual overall star rating: 3
+Relevant aspect text:
+Good stuff, not excellent.
+Sentiment score: -0.0253
+Predicted quality rating: 1
+---
+Actual overall star rating: 5
+Relevant aspect text:
+Reasonably priced, for Nashville, the food was awesome.
+Sentiment score: 0.6249
+Predicted quality rating: 5
+---
+Actual overall star rating: 4
+Relevant aspect text:
+However, it was delicious. Next time I'll probably stick with something more simple so I can get the true taste of the custard. The portions are HUGE.
+Sentiment score: 0.4861
+Predicted quality rating: 4
+---
+Actual overall star rating: 5
+Relevant aspect text:
+Fun breakfast place, creative menu & excellent service. I highly recommend to all you foodies out there!
+Sentiment score: 0.6730
+Predicted quality rating: 5
+---
+Actual overall star rating: 2
+Relevant aspect text:
+Primos in general has great quality and delicious foods, this primo just flat out sucks.
+Sentiment score: 0.7430
+Predicted quality rating: 5
+---
+Actual overall star rating: 5
+Relevant aspect text:
+The "High Priest of Ice Cream", Michael, met us as we entered the shop and asked us if we would be interested in sampling his newest flavor. We tried the new flavor, a mixture of peanut butter, bananas, and honey, and found it to be incredible along with 10 other flavors--all great. The ice cream at this place is as fresh as the ice cream you used to churn on your back porch on Sunday afternoons. It's that fresh because Michael does it the old fashioned way, one small batch at a time. Because of this attention to the old fashioned method, all of the flavors we sampled were amazing, even the basic chocolate was delicious. Ultimately, I chose a vanilla toffee/new flavor mixture in an in-house made waffle cone.
+Sentiment score: 0.4135
+Predicted quality rating: 4
+---
+Actual overall star rating: 1
+Relevant aspect text:
+Basic old diner style food stuck in 70's...
+Sentiment score: -0.2500
+Predicted quality rating: 1
+---
+
+--- Price rating examples ---
+Actual overall star rating: 1
+Relevant aspect text:
+Would not recommend this place it was one of the worse meals I have eaten....very over priced the food had no flavor the coconut cake was very dry too..save your money.
+Sentiment score: -0.7514
+Predicted price rating: 1
+---
+Actual overall star rating: 3
+Relevant aspect text:
+Cute place, good service, fair prices.
+Sentiment score: 0.8020
+Predicted price rating: 5
+---
+Actual overall star rating: 1
+Relevant aspect text:
+Not worth the $50+ (plus tip).
+Sentiment score: -0.1695
+Predicted price rating: 1
+---
+Actual overall star rating: 5
+Relevant aspect text:
+Definitely worth getting off interstate on road trip today a fabulous and healthy lunch.
+Sentiment score: 0.8658
+Predicted price rating: 5
+---
+Actual overall star rating: 3
+Relevant aspect text:
+Service is so-so; pho should be hard to mess up but for the price, the meat was scant and the soup was not well seasoned.
+Sentiment score: -0.4890
+Predicted price rating: 1
+---
+Actual overall star rating: 4
+Relevant aspect text:
+I've bumped this place up to 4 stars because their food has gotten significantly better, and their prices aren't so ridiculous.
+Sentiment score: 0.6766
+Predicted price rating: 5
+---
+Actual overall star rating: 4
+Relevant aspect text:
+Alberto's was my go to place when I was still in school because it opens until midnight and it's cheap!
+Sentiment score: 0.0000
+Predicted price rating: 1
+---
+Actual overall star rating: 1
+Relevant aspect text:
+The donair meat was very cheap tasting....like it came out of a can or something gross.
+Sentiment score: -0.4767
+Predicted price rating: 1
+---
+Actual overall star rating: 4
+Relevant aspect text:
+The price is reasonable, food is quite good, and the service as well.
+Sentiment score: 0.6478
+Predicted price rating: 5
+---
+Actual overall star rating: 5
+Relevant aspect text:
+This place is defiantly worth 5 stars!
+Sentiment score: 0.2942
+Predicted price rating: 3
+---
+
+--- Convenience rating examples ---
+Actual overall star rating: 3
+Relevant aspect text:
+This is my go-to sushi spot since it is located so close to home.
+Sentiment score: 0.0000
+Predicted convenience rating: 2
+---
+Actual overall star rating: 4
+Relevant aspect text:
+Even though I had been to the area before I usually venture into downtown for food but decided to fire up yelp and take a look at options closer to the hotel. Service was friendly and I had no issues getting a table during the time I was there.
+Sentiment score: -0.1134
+Predicted convenience rating: 1
+---
+Actual overall star rating: 4
+Relevant aspect text:
+It was slightly pricey for breakfast, but the ingredients are good quality so I suppose it's worth it.
+Sentiment score: 0.7647
+Predicted convenience rating: 5
+---
+Actual overall star rating: 5
+Relevant aspect text:
+Anyways, I went around 9:15 and the line wasn't too bad - I'd say a 5-10 minute wait. You don't pay at the table - they ring you up by the door to try and get people in and out fast which seems to work because the line is always moving fairly fast. Rip : I drive by it almost every morning - if you want to avoid the line go either RIGHT when they open to around 7:15
+Sentiment score: 0.0936
+Predicted convenience rating: 2
+---
+Actual overall star rating: 4
+Relevant aspect text:
+Unfortunately, the service was mediocre.
+Sentiment score: -0.3400
+Predicted convenience rating: 1
+---
+Actual overall star rating: 5
+Relevant aspect text:
+I have never been given any bad service and I'm always welcomed warmly when I come in, whether I get something to eat or not.
+Sentiment score: 0.1531
+Predicted convenience rating: 2
+---
+Actual overall star rating: 5
+Relevant aspect text:
+Friendly and fast service, and a great spot to people watch!
+Sentiment score: 0.8221
+Predicted convenience rating: 5
+---
+Actual overall star rating: 4
+Relevant aspect text:
+Breakfast served all day is a bonus.
+Sentiment score: 0.5423
+Predicted convenience rating: 5
+---
+Actual overall star rating: 1
+Relevant aspect text:
+We were quickly seated and ordered our food, took them about 40 minutes to get it out to us.
+Sentiment score: 0.0000
+Predicted convenience rating: 2
+---
+Actual overall star rating: 4
+Relevant aspect text:
+Checked this spot out with work colleagues due to its convenient location to our work (we could walk & leave cars in parking garage!).
+Sentiment score: -0.1260
+Predicted convenience rating: 1
+---
+
+Reviews with all three aspect sentiment scores available: 4904
+
+Aspect sentiment regression results:
+  Standardized coefficient for quality: 0.4116
+  Standardized coefficient for price: 0.2087
+  Standardized coefficient for convenience: 0.2414
+  Intercept: 3.7397
+  Test-set R-squared: 0.2713
+  Test-set MAE: 0.8449
+  Test-set RMSE: 1.0646
+
+Pearson correlation matrix:
+                       quality_sentiment  ...   stars
+quality_sentiment                 1.0000  ...  0.4872
+price_sentiment                   0.4577  ...  0.3852
+convenience_sentiment             0.4482  ...  0.4036
+stars                             0.4872  ...  1.0000
+
+[4 rows x 4 columns]
+
+Saved aspect regression coefficient plot to: MODEL_OUTPUT/aspect_regression_coefficients.png
+Model accuracy: 0.5970
+Mean Absolute Error (MAE): 0.5009
+
+Classification report:
+              precision    recall  f1-score   support
+
+           1       0.62      0.71      0.67       625
+           2       0.40      0.41      0.41       548
+           3       0.40      0.43      0.41       776
+           4       0.51      0.49      0.50      1787
+           5       0.75      0.73      0.74      2664
+
+    accuracy                           0.60      6400
+   macro avg       0.54      0.55      0.55      6400
+weighted avg       0.60      0.60      0.60      6400
+
+
+Saved model to: MODEL_OUTPUT/restaurant_review_model.joblib
+Saved aspect results summary to: MODEL_OUTPUT/aspect_results_summary.csv
+Saved quality scatter plot to: MODEL_OUTPUT/quality_sentiment_vs_stars.png
+Saved price scatter plot to: MODEL_OUTPUT/price_sentiment_vs_stars.png
+Saved convenience scatter plot to: MODEL_OUTPUT/convenience_sentiment_vs_stars.png
+Saved predicted-versus-actual plot to: MODEL_OUTPUT/aspect_regression_predicted_vs_actual.png
+
+Final aspect-based results summary:
+  Full dataset reviews: 32000
+  Reviews used in three-aspect regression: 4904
+  R-squared: 0.2713
+  MAE: 0.8449
+  RMSE: 1.0646
+  Quality standardized coefficient: 0.4116
+  Price standardized coefficient: 0.2087
+  Convenience standardized coefficient: 0.2414
+  Largest standardized coefficient: quality

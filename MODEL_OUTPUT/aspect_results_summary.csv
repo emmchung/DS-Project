@@ -1,0 +1,4 @@
+aspect,reviews_mentioning_aspect,pearson_correlation_with_stars,standardized_regression_coefficient
+quality,25273,0.5189671875569741,0.4116293236571921
+price,9716,0.3890296175785347,0.2086998621336193
+convenience,16874,0.458310224720988,0.24135778488478193
