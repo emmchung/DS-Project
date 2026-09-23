@@ -9,10 +9,19 @@ Yelp permits use and modification of the dataset for non-commercial educational 
 ## Ethical Statement
 The Yelp Open Dataset contains publicly available, user-generated reviews, but the text may reflect subjective opinions, demographic differences, cultural expectations, and other biases in who chooses to leave reviews. We will not use user-identifying information as model features and will focus on restaurant-level rather than individual-level conclusions. We will also acknowledge that Yelp reviewers may not be representative of all restaurant customers. 
 ## Data Dictionary
-
-| Variable | Type | Description | Uncertainties
-| -------- | -------- | -------- |
+| Variable | Type | Description | Uncertainties |
+| --- | --- | --- | --- |
 | review_id | string | Identifier for each Yelp review | Treat as an identifier rather than a numeric value. |
 | user_id | string | Unique identifier for the Yelp user who wrote the review | Identifies the reviewer but does not provide demographic information. Multiple reviews may come from the same user. |
-
+| business_id | string | Unique identifier for the Yelp business being reviewed | Used to identify unique restaurants rather than name since restaurant names are not necessarily unique. The file contains 2922 unique business_ids. |
+| stars | Numeric (1-5) | Star rating given by the reviewer for the individual review | Represents the reviewer's overall rating. Not separate ratings for price quality or convenience. |
+| useful | Integer | Number of Yelp users who marked the review as useful | Count may reflect review engagement rather than the content or quality of the restaurant. Not necessary for the model. |
+| funny | Integer | Number of Yelp users who marked the review as funny | Engagement metric. Not relevant for model. |
+| cool | Integer | Number of Yelp users who marked the review as cool | Engagement metric. Not relevant for model. |
+| text | Text | Full written text of the Yelp review | Primary textual data for the project. Reviews vary substantially in length and writing style. May contain spelling errors slang punctuation profanity and other informal language. |
+| date | Date/Time | Date and time the review was posted | Historical reviews span multiple years so restaurant experiences and ratings may reflect different time periods. |
+| name | String | Name of the restaurant/business | Restaurant names are not guaranteed to be unique. use business_id when counting unique restaurants. |
+| city | String | City in which the restaurant is located | Geographic information is available but city names may require standardization if used for geographic analysis. |
+| state | String | State in which the restaurant is located | State abbreviations appear to be used. Geographic distribution may not be representative of all U.S. restaurants. |
+| restaurant_stars | Numeric (1-5) | Overall Yelp star rating associated with the restaurant/business | This is the restaurant's overall Yelp rating not the rating assigned to the individual review. It should not be interpreted as an aspect-level rating for price quality or convenience. |
 ## Exploratory Plots 
