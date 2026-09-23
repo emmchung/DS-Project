@@ -1,4 +1,4 @@
-# README file for data establishment information
+# README file for Data Establishment
 ## Summary
 This dataset contains two merged data sets obtanied from the yelp open data set, review.json and business.json. The business.json file contains business-level listings for sit-down restaurants drawn from the Yelp Open Dataset, including each restaurant's name, location, aggregate star rating, and number of reviews. Fast food, cafe, and bar establishments have been excluded to match the project's narrowed focus on sit-down dining experiences. Review.json was merged with business.json by business_id after preprocessing. The merged dataset was further cut down using random sampling, leaving 32,000 reviews behind for processing and modeling steps. The datafile lives in our group's shared github repository in the Data folder and is titled sitdown_reviews.csv. 
 ## Provenance
