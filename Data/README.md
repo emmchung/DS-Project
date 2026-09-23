@@ -25,3 +25,5 @@ The Yelp Open Dataset contains publicly available, user-generated reviews, but t
 | state | String | State in which the restaurant is located | State abbreviations appear to be used. Geographic distribution may not be representative of all U.S. restaurants. |
 | restaurant_stars | Numeric (1-5) | Overall Yelp star rating associated with the restaurant/business | This is the restaurant's overall Yelp rating not the rating assigned to the individual review. It should not be interpreted as an aspect-level rating for price quality or convenience. |
 ## Exploratory Plots 
+<img width="1780" height="977" alt="avg_star_by_review_count" src="https://github.com/user-attachments/assets/4da92ad6-b87d-4185-8786-ab8146111fa7" />
+<img width="1780" height="977" alt="restaurants_by_review_count" src="https://github.com/user-attachments/assets/b1b45f94-20c7-4a28-a8d8-506a118e2bae" />
