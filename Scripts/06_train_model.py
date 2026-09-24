@@ -21,6 +21,8 @@ Outputs:
 Required packages:
 pandas, numpy, nltk, scikit-learn, matplotlib, joblib
 """
+# Import standard Python libraries for file handling, text processing,
+# data analysis, sentiment analysis, machine learning, and visualization.
 import os
 import re
 from pathlib import Path
@@ -37,34 +39,43 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+# Use a non-interactive Matplotlib backend so figures can be generated
+# and saved without opening a plot window.
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+# Download the VADER sentiment lexicon required for sentiment analysis.
 nltk.download("vader_lexicon", quiet=True)
 
+# Define the input dataset, output directory, and location for the saved model.
 DATA_PATH = Path("Data/sitdown_reviews_25mb.csv")
 OUTPUT_DIR = Path("MODEL_OUTPUT")
 MODEL_PATH = OUTPUT_DIR / "restaurant_review_model.joblib"
 
 
 def main():
+    # Verify that the required input dataset exists before beginning the analysis.
     if not DATA_PATH.exists():
         raise FileNotFoundError(f"Dataset not found: {DATA_PATH}")
 
+    # Confirm that the output location can be used as a directory.
     if OUTPUT_DIR.exists() and not OUTPUT_DIR.is_dir():
         raise IsADirectoryError(
             f"Cannot use {OUTPUT_DIR} because a file already exists there. "
             "Please remove or rename that file before running the model."
         )
 
+    # Create the MODEL_OUTPUT directory if it does not already exist.
     OUTPUT_DIR.mkdir(exist_ok=True)
 
+    # Load the Yelp restaurant review dataset and record its original size.
     df = pd.read_csv(DATA_PATH)
     original_rows = len(df)
 
     print(f"Original number of rows: {original_rows}")
 
-    # Keep only rows with review text and a valid rating
+    # Remove reviews with missing text or star ratings and convert star ratings
+    # to integers so they can be used consistently throughout the analysis.
     cleaned_df = df[["text", "stars"]].dropna().copy()
     cleaned_df["stars"] = cleaned_df["stars"].astype(int)
 
@@ -73,6 +84,7 @@ def main():
     if "review_id" in df.columns:
         print(f"Number of unique reviews: {df['review_id'].nunique()}")
 
+    # Summarize the distribution of 1-5 star ratings in the cleaned dataset.
     rating_counts = cleaned_df["stars"].value_counts().sort_index()
     rating_percentages = (rating_counts / rating_counts.sum() * 100).round(2)
 
@@ -82,6 +94,9 @@ def main():
         percentage = rating_percentages.get(rating, 0.0)
         print(f"  {rating}: {count} ({percentage:.2f}%)")
 
+    # Define keyword dictionaries for the three restaurant experience aspects.
+    # These terms are used to determine whether a review discusses quality,
+    # price, or convenience.
     quality_keywords = [
         "food", "delicious", "tasty", "fresh", "flavor", "flavour",
         "quality", "meal", "dish", "excellent", "amazing", "great food",
@@ -97,12 +112,16 @@ def main():
         "service", "busy", "line"
     ]
 
+    # Define a helper function that checks whether review text contains at least
+    # one keyword associated with a specified restaurant aspect.
     def mentions_keywords(text, keywords):
         if pd.isna(text):
             return False
         lower_text = str(text).lower()
         return any(keyword.lower() in lower_text for keyword in keywords)
 
+    # Create indicator variables showing whether each review mentions
+    # quality, price, and/or convenience.
     aspect_df = cleaned_df.copy()
     aspect_df["mentions_quality"] = aspect_df["text"].apply(
         lambda text: mentions_keywords(text, quality_keywords)
@@ -114,6 +133,7 @@ def main():
         lambda text: mentions_keywords(text, convenience_keywords)
     )
 
+    # Count the number and percentage of reviews that mention each aspect.
     print("\nAspect mention summary:")
     for aspect_name, column_name in [
         ("quality", "mentions_quality"),
@@ -124,6 +144,8 @@ def main():
         percentage = (count / len(aspect_df) * 100) if len(aspect_df) > 0 else 0.0
         print(f"  {aspect_name}: {count} ({percentage:.2f}%)")
 
+    # Display random review examples to manually inspect whether the keyword
+    # rules are identifying relevant reviews for each aspect.
     print("\nRandom review examples for each aspect:")
     for aspect_name, column_name in [
         ("quality", "mentions_quality"),
@@ -137,10 +159,13 @@ def main():
             print(row["text"])
             print("---")
 
-    # Aspect-based sentiment analysis using VADER on only the sentences that mention
-    # the target aspect. This is separate from the overall star rating model.
+    # Perform aspect-based sentiment analysis using VADER. Only sentences containing
+    # keywords for the target aspect are scored so sentiment is specific to quality,
+    # price, or convenience rather than the sentiment of the entire review.
     sia = SentimentIntensityAnalyzer()
 
+    # Split each review into sentences and retain only sentences containing
+    # keywords associated with the target aspect.
     def extract_aspect_sentences(text, keywords):
         if pd.isna(text):
             return []
@@ -153,6 +178,8 @@ def main():
                 matches.append(sentence.strip())
         return matches
 
+    # Calculate the mean VADER compound sentiment score across all sentences
+    # related to an aspect. Scores range from -1 (negative) to +1 (positive).
     def aspect_sentiment(text, keywords):
         sentences = extract_aspect_sentences(text, keywords)
         if not sentences:
@@ -160,6 +187,8 @@ def main():
         scores = [sia.polarity_scores(sentence)["compound"] for sentence in sentences]
         return float(sum(scores) / len(scores))
 
+    # Calculate separate quality, price, and convenience sentiment scores
+    # for each review when the corresponding aspect is mentioned.
     aspect_df["quality_sentiment"] = aspect_df["text"].apply(
         lambda text: aspect_sentiment(text, quality_keywords)
         if mentions_keywords(text, quality_keywords) else float("nan")
@@ -173,6 +202,8 @@ def main():
         if mentions_keywords(text, convenience_keywords) else float("nan")
     )
 
+    # Display random examples of aspect-specific sentences and their VADER
+    # sentiment scores for manual inspection of the sentiment extraction process.
     print("\nAspect sentiment examples (10 random samples per aspect):")
     for aspect_name, column_name, score_column in [
         ("quality", "mentions_quality", "quality_sentiment"),
@@ -201,6 +232,8 @@ def main():
         "convenience": "convenience_sentiment",
     }
 
+    # Compare mean aspect sentiment across Yelp star-rating levels and calculate
+    # correlations as an initial check of the relationship between sentiment and stars.
     fig, axes = plt.subplots(1, 3, figsize=(18, 5), sharey=True)
     fig.suptitle("Mean aspect sentiment by Yelp star rating")
 
@@ -225,6 +258,7 @@ def main():
         ax.set_ylabel("Mean sentiment")
         ax.axhline(0, color="black", linewidth=0.8)
 
+    # Save the aspect sentiment comparison figure to MODEL_OUTPUT.
     plot_path = OUTPUT_DIR / "aspect_sentiment_by_star.png"
     plt.tight_layout(rect=[0, 0, 1, 0.96])
     plt.savefig(plot_path, dpi=150)
@@ -238,6 +272,8 @@ def main():
         "convenience": "convenience_rating",
     }
 
+    # Map continuous sentiment scores to the closest 1-5 rating based on the
+    # observed mean sentiment associated with each Yelp star level.
     for aspect_name, score_column in aspect_mapping.items():
         filtered = aspect_df[aspect_df[score_column].notna()].copy()
         score_to_rating = {}
@@ -266,6 +302,8 @@ def main():
             count = int(counts.get(star, 0))
             print(f"  {star}: {count}")
 
+    # Display random mapped aspect ratings alongside their source review text
+    # and sentiment scores for manual validation.
     print("\nRandom aspect rating validation examples:")
     for aspect_name, score_column, rating_col in [
         ("quality", "quality_sentiment", "quality_rating"),
@@ -291,15 +329,21 @@ def main():
     # Regression analysis using the continuous aspect sentiment scores.
     # This is separate from the TF-IDF text model and uses only reviews where all
     # three aspect sentiments are available.
+    # Create the regression dataset by retaining observations with non-missing
+    # sentiment scores for quality, price, and convenience.
     regression_df = aspect_df[
         ["stars", "quality_sentiment", "price_sentiment", "convenience_sentiment"]
     ].dropna().copy()
 
     print(f"\nReviews with all three aspect sentiment scores available: {len(regression_df)}")
 
+    # Define quality, price, and convenience sentiment as predictor variables
+    # and Yelp stars as the regression outcome.
     X_reg = regression_df[["quality_sentiment", "price_sentiment", "convenience_sentiment"]].copy()
     y_reg = regression_df["stars"]
 
+    # Randomly divide the regression data into 80% training and 20% testing sets.
+    # A fixed random state is used so the split can be reproduced.
     X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(
         X_reg,
         y_reg,
@@ -307,15 +351,22 @@ def main():
         random_state=42,
     )
 
+    # Standardize the three sentiment predictors using parameters learned only
+    # from the training set, then apply the same transformation to the test set.
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train_reg)
     X_test_scaled = scaler.transform(X_test_reg)
 
+    # Fit a multiple linear regression model using the standardized aspect
+    # sentiment predictors.
     reg_model = LinearRegression()
     reg_model.fit(X_train_scaled, y_train_reg)
 
+    # Generate predictions for the held-out test set.
     y_pred_reg = reg_model.predict(X_test_scaled)
 
+    # Evaluate model performance using R-squared, MAE, and RMSE, and report
+    # the regression coefficients for each aspect.
     print("\nAspect sentiment regression results:")
     print(f"  Standardized coefficient for quality: {reg_model.coef_[0]:.4f}")
     print(f"  Standardized coefficient for price: {reg_model.coef_[1]:.4f}")
@@ -326,15 +377,18 @@ def main():
     rmse = mean_squared_error(y_test_reg, y_pred_reg) ** 0.5
     print(f"  Test-set RMSE: {rmse:.4f}")
 
+    # Calculate Pearson correlations among aspect sentiment variables and Yelp stars.
     corr_matrix = regression_df[["quality_sentiment", "price_sentiment", "convenience_sentiment", "stars"]].corr(method="pearson")
     print("\nPearson correlation matrix:")
     print(corr_matrix.round(4))
 
+    # Organize regression coefficients into a DataFrame for visualization.
     coef_df = pd.DataFrame({
         "aspect": ["quality", "price", "convenience"],
         "standardized_coefficient": reg_model.coef_
     })
 
+    # Create and save a bar chart comparing regression coefficients across aspects.
     plt.figure(figsize=(8, 5))
     plt.bar(coef_df["aspect"], coef_df["standardized_coefficient"], color=["steelblue", "darkorange", "forestgreen"])
     plt.axhline(0, color="black", linewidth=0.8)
@@ -346,10 +400,18 @@ def main():
     plt.savefig(plot_reg_path, dpi=150)
     print(f"\nSaved aspect regression coefficient plot to: {plot_reg_path}")
 
+    # -------------------------------------------------------------------------
+    # Additional Text Classification Model
+    # -------------------------------------------------------------------------
+    # As a secondary analysis, train a TF-IDF logistic regression model to predict
+    # individual review star ratings directly from the complete review text.
+    # This analysis is separate from the primary aspect-sentiment regression.
     df = cleaned_df
     X = df["text"]
     y = df["stars"]
 
+    # Split review text and star ratings into stratified training and testing sets
+    # so the star-rating distribution is maintained in both sets.
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
@@ -358,6 +420,8 @@ def main():
         stratify=y,
     )
 
+    # Build a pipeline that converts review text into TF-IDF features and uses
+    # logistic regression to classify reviews into 1-5 star ratings.
     model = Pipeline(
         steps=[
             (
@@ -381,8 +445,10 @@ def main():
         ]
     )
 
+    # Train the text classification model using the training reviews.
     model.fit(X_train, y_train)
 
+    # Evaluate the text classification model on the held-out test reviews.
     y_pred = model.predict(X_test)
     acc = accuracy_score(y_test, y_pred)
     mae = (abs(y_test - y_pred)).mean()
@@ -392,10 +458,12 @@ def main():
     print("\nClassification report:")
     print(classification_report(y_test, y_pred))
 
+    # Save the trained text classification pipeline for future use.
     joblib.dump(model, MODEL_PATH)
     print(f"\nSaved model to: {MODEL_PATH}")
 
-    # Final results summary using the aspect analysis results already calculated.
+    # Compile the primary aspect-analysis results into a summary table containing
+    # review counts, Pearson correlations, and regression coefficients.
     summary_rows = []
     for aspect_name, score_column, coefficient in zip(
         ["quality", "price", "convenience"],
@@ -455,6 +523,8 @@ def main():
     plt.close()
     print(f"Saved predicted-versus-actual plot to: {predicted_actual_path}")
 
+    # Identify the aspect with the largest regression coefficient and print
+    # a concise summary of the primary analysis results.
     largest_aspect = aspect_results_summary.loc[
         aspect_results_summary["standardized_regression_coefficient"].idxmax(),
         "aspect",
@@ -473,5 +543,6 @@ def main():
     print(f"  Largest standardized coefficient: {largest_aspect}")
 
 
+# Run the main analysis when this script is executed directly.
 if __name__ == "__main__":
     main()
