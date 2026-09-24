@@ -53,13 +53,13 @@ python3 train_model.py
 - Evaluating the model using R², MAE, and RMSE.
 - Generating the final regression coefficients, summary files, and figures.
 6. The primary results should be approximately:
-Restaurants included: 1,866
-Training restaurants: 1,492
-Testing restaurants: 374
-Test R²: 0.1227
-Test MAE: 0.4753
-Test RMSE: 0.5923
-Quality coefficient: 0.1995
-Convenience coefficient: 0.1282
-Price coefficient: 0.0644
+- Restaurants included: 1,866
+- Training restaurants: 1,492
+- Testing restaurants: 374
+- Test R²: 0.1227
+- Test MAE: 0.4753
+- Test RMSE: 0.5923
+- Quality coefficient: 0.1995
+- Convenience coefficient: 0.1282
+- Price coefficient: 0.0644
 7. Generated results and figures can be found in the MODEL_OUTPUT folder.
