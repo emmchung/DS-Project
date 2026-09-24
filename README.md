@@ -2,6 +2,9 @@
 ## Contents
 ## Software and Platform Selection
 ### Software Types Used
+- Visual Studio Code (VS Code)
+- Python 3.12
+- Git/GitHub
 ### Add-on packages
 Pandas, numpy, nltk, scikit-learn, matplotlib, job lib
 ### Platform used
