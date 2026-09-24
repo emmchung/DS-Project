@@ -40,7 +40,7 @@ Steps to reproduce the analysis:
 3. Install the required Python packages by running the following command in the VS Code terminal:
 pip install pandas numpy nltk scikit-learn matplotlib joblib
 4. Run the modeling script from the project directory:
-python3 "Scripts/train_model.py"
+python3 "Scripts/06_train_model.py"
 5. The script will reproduce the analysis by:
 - Loading and cleaning the Yelp review data.
 - Identifying review sentences related to quality, price, and convenience.
