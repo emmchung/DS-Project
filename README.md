@@ -35,34 +35,53 @@ Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated termina
     * quality_sentiment_vs_stars.png
   * References
 ## Instructions for Reproducing results
-Platform: Visual Studio Code (VS Code)
-Programming Language: Python 3.12
-Steps to reproduce the analysis:
+### Software and Environment
+- Python 3.12
+- Visual Studio Code (VS Code)
+- Required Python packages: pandas, nltk, scikit-learn, matplotlib, joblib
+
+Install the required packages by running:
+
+pip install pandas nltk scikit-learn matplotlib joblib
+
+### Option 1: Reproduce the Final Analysis
+
+The processed dataset required for the final analysis is provided in the `Data` folder. Therefore, users do not need to download and preprocess the complete Yelp Open Dataset to reproduce the final results.
+
 1. Clone or download this GitHub repository and open the project folder in Visual Studio Code.
-2. Confirm that the Yelp review dataset is located in the Data folder.
-3. Install the required Python packages by running the following command in the VS Code terminal:
-pip install pandas numpy nltk scikit-learn matplotlib joblib
-4. Run the modeling script from the project directory:
-python3 "Scripts/06_train_model.py"
-5. The script will reproduce the analysis by:
-- Loading and cleaning the Yelp review data.
-- Identifying review sentences related to quality, price, and convenience.
-- Calculating VADER sentiment scores for each aspect.
-- Aggregating the aspect sentiment scores at the restaurant level.
-- Retaining restaurants with sentiment scores for all three aspects.
-- Splitting the restaurant-level data into 80% training and 20% testing sets.
-- Standardizing the three aspect sentiment predictors.
-- Fitting a multiple linear regression model to predict overall restaurant Yelp ratings.
-- Evaluating the model using R², MAE, and RMSE.
-- Generating the final regression coefficients, summary files, and figures.
-6. The primary results should be approximately:
-- Restaurants included: 1,866
-- Training restaurants: 1,492
-- Testing restaurants: 374
-- Test R²: 0.1227
-- Test MAE: 0.4753
-- Test RMSE: 0.5923
-- Quality coefficient: 0.1995
-- Convenience coefficient: 0.1282
-- Price coefficient: 0.0644
-7. Generated results and figures can be found in the MODEL_OUTPUT folder.
+
+2. Confirm that `sitdown_reviews_25mb.csv` is located in the `Data` folder.
+
+3. Install the required Python packages using the command above.
+
+4. Run the final modeling script from the project directory:
+
+python3 "Scripts/Train Modeling"
+
+5. The modeling script will:
+   - Load and clean the processed Yelp review data.
+   - Identify review text related to quality, price, and convenience.
+   - Calculate VADER sentiment scores for the three aspects.
+   - Perform the project's regression analysis.
+   - Evaluate model performance.
+   - Generate figures and summary files.
+
+6. Generated results and figures will be saved in the `MODEL_OUTPUT` folder.
+
+### Option 2: Reproduce Data Acquisition and Preprocessing
+
+The original data were obtained from the Yelp Open Dataset. Because the complete Yelp dataset is too large to store in this GitHub repository, the original Yelp JSON files must be downloaded separately to reproduce the full data acquisition process.
+
+The preprocessing scripts in the `Scripts` folder document the process used to transform the original Yelp data into the processed dataset used for analysis.
+
+The initial restaurant extraction script:
+- Loads the Yelp business and review JSON files.
+- Identifies businesses categorized as restaurants.
+- Extracts their business IDs and restaurant information.
+- Processes the large review dataset in chunks of 100,000 reviews.
+- Retains reviews associated with restaurant business IDs.
+- Saves the resulting restaurant data and review chunks as CSV files.
+
+The file paths in the original preprocessing script reflect the local computer used during data acquisition. To rerun this script, users must update the `business`, `reviews`, and `output` paths at the beginning of the script to match the locations of the Yelp files on their own computer.
+
+After preprocessing the original Yelp data, run the remaining preprocessing scripts in the order described in the repository map to produce the final analysis dataset.
