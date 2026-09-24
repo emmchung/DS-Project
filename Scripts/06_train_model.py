@@ -1,3 +1,26 @@
+"""
+DS 4002 - Group 8
+Script: Train Modeling
+
+Purpose:
+This script performs the primary analysis for the Yelp restaurant review
+project. It identifies review text related to quality, price, and convenience,
+calculates VADER sentiment scores for each aspect, aggregates the sentiment
+scores at the restaurant level, and uses multiple linear regression to examine
+the relationship between aspect sentiment and overall restaurant Yelp ratings.
+
+Input:
+- Data/sitdown_reviews_25mb.csv
+
+Outputs:
+- Restaurant-level aspect sentiment results
+- Regression coefficients
+- Model evaluation metrics (R², MAE, and RMSE)
+- Figures and summary files saved to MODEL_OUTPUT
+
+Required packages:
+pandas, numpy, nltk, scikit-learn, matplotlib, joblib
+"""
 import os
 import re
 from pathlib import Path
