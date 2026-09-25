@@ -1,4 +1,4 @@
-# Preprocessing Data files obtained from [3] Yelp open dataset: review.json and business.json. 
+# Preprocessing Data files obtained from [3] Yelp open dataset: review.json and business.json.
 import pandas as pd
 import os
 
@@ -23,7 +23,7 @@ restaurants = business[
 
 print("Number of restaurants:", len(restaurants))
 
-restaurants = restaurants[["business_id", "name", "stars", "categories"]]
+restaurants = restaurants[["business_id", "name", "city", "state", "stars", "categories"]]
 
 restaurants.to_csv(os.path.join(output, "restaurants.csv"),index=False)
 
