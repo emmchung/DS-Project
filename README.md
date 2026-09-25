@@ -50,13 +50,13 @@ The processed dataset required for the final analysis is provided in the `Data` 
 
 1. Clone or download this GitHub repository and open the project folder in Visual Studio Code.
 
-2. Confirm that `sitdown_reviews_25mb.csv` is located in the `Data` folder.
+2. Confirm that `sitdown_reviews.csv` is located in the `Data` folder.
 
 3. Install the required Python packages using the command above.
 
 4. Run the final modeling script from the project directory:
 
-python3 "Scripts/Train Modeling"
+python3 "Scripts/06_train_modeling.py"
 
 5. The modeling script will:
    - Load and clean the processed Yelp review data.
