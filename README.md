@@ -17,10 +17,10 @@ Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated termina
     * README.md
     * sitdown_reviews.csv: raw data file
   * Scripts : contains all source code for the project. 
+    * Load Data
     * Preprocessing
     * Merge Reviews and Business Data Script
     * Cut down the data set
-    * Load Data
     * Review Text Preprocessing
     * Train Modeling
   * License
