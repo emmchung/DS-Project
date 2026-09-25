@@ -23,7 +23,6 @@ Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated termina
     * 04_merge_reviews_business.py
     * 05_reduce_dataset.py
     * 06_train_model.py
-    * ANALYSIS.ipynb
   * License
   * MODEL_OUTPUT
     * aspect_regression_coefficients.png
