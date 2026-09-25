@@ -2,7 +2,7 @@
 import json
 import pandas as pd
 
-reviews = r"C:\Users\bryso\Downloads\Yelp-JSON\reviews_filtered.json"
+reviews = r"C:\Users\bryso\Downloads\Yelp-JSON\yelp_academic_reviews.json"
 businesses = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants_sitdown_only.csv"
 output = r"C:\Users\bryso\Downloads\Yelp-JSON\sitdown_reviews_joined2.csv"
 
