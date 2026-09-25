@@ -56,7 +56,7 @@ The processed dataset required for the final analysis is provided in the `Data` 
 
 4. Run the final modeling script from the project directory:
 
-python3 "Scripts/06_train_modeling.py"
+python3 "Scripts/05_train_model.py"
 
 5. The modeling script will:
    - Load and clean the processed Yelp review data.
