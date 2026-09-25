@@ -1,6 +1,6 @@
 import pandas as pd
 
-path = r"C:\Users\bryso\Downloads\Yelp-JSON\all_restaurants.csv"
+path = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants.csv"
 output = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants_sitdown_only.csv"
 
 restaurants = pd.read_csv(path)
