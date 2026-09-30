@@ -1,3 +1,6 @@
+# This script is a secondary preprocessing script used to filter the data into only sit down restaurant types.
+# The input of this file is restaurants.csv obtained from 02_preprocessing.py. The output is restaurants_sitdown_only.csv, which contains only reviews from the open data set that pertain to sitdown restaurants. 
+
 import pandas as pd
 
 path = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants.csv"
