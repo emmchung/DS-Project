@@ -2,9 +2,9 @@
 import json
 import pandas as pd
 
-reviews = r"C:\Users\bryso\Downloads\Yelp-JSON\yelp_academic_review.json"
-businesses = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants_sitdown_only.csv"
-output = r"C:\Users\bryso\Downloads\Yelp-JSON\sitdown_reviews_joined2.csv"
+reviews = "Data\Yelp-JSON\yelp_academic_review.json"
+businesses = "Data\Yelp-JSON\restaurants_sitdown_only.csv"
+output = "Data\Yelp-JSON\sitdown_reviews_joined2.csv"
 
 with open(reviews, "r", encoding="utf-8") as f:
     first_review = json.loads(f.readline())
