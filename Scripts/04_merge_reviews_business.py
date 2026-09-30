@@ -1,4 +1,7 @@
-# This is a script used to merge the two data sets together AFTER using Business ID Preprocessing and Review Text Preprocessing
+# This is a script used to merge the two data sets together after using the preprocessing scripts. 
+# the input to this file is yelp_academic_review.json and obtained form the yelp open data set and restaurants_sitdown_only.csv obtained from the 03_preprocessing_2.py.
+
+
 import json
 import pandas as pd
 
