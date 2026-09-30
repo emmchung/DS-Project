@@ -15,7 +15,7 @@ for chunk in pd.read_csv(input_file, chunksize=8000):
     if size >= 25 * 1024 * 1024:
         break
         
-sample = pd.concat(rows, ignore_index=True)
+sample = (pd.concat(rows, ignore_index=True).sample(n=32000, random_state=42).reset_index(drop=True))
 sample.to_csv(output_file, index=False)
 
 print("Done!")
