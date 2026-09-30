@@ -5,9 +5,9 @@ import pandas as pd
 import os
 
 
-business= r"C:\Users\bryso\Downloads\Yelp-JSON\yelp_academic_dataset_business.json"
-reviews = r"C:\Users\bryso\Downloads\Yelp-JSON\yelp_academic_dataset_review.json"
-output = r"C:\Users\bryso\Downloads\Yelp-JSON\processed"
+business= "Data\Yelp-JSON\yelp_academic_dataset_business.json"
+reviews = "Data\Yelp-JSON\yelp_academic_dataset_review.json"
+output = "Data\Yelp-JSON\processed"
 
 os.makedirs(output,exist_ok=True)
 
