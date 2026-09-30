@@ -1,30 +1,8 @@
-# This is the initial restaurant extraction script.
-
-
-import tarfile
-import os
-
-tar_path = "Data\Yelp-Json.tar"
-extract_to = "Data\Yelp-JSON"
-
-os.makedirs(extract_to, exist_ok=True)
-
-with tarfile.open(tar_path, "r") as tar:
-    tar.extractall(path=extract_to)
-
-print("Extracted to:", extract_to)
-
 # This is the initial restaurant extraction script. It is the first step in creating the smaller Yelp dataset used for our analysis.
+# obtained from "" into a usable file for preprocessing --> merging --> modeling. 
 #
-# The overall extraction process is intended to:
-# 1. Load the Yelp business and review JSON files.
-# 2. Identify businesses categorized as restaurants.
-# 3. Extract the business IDs and restaurant information.
-# 4. Process the large review dataset in chunks of 100,000 reviews.
-# 5. Keep only reviews associated with restaurant business IDs.
-# 6. Save the resulting restaurant data and review chunks as CSV files.
-#
-# The goal is to reduce the original Yelp Open Dataset to a more manageable dataset of approximately 32,000 restaurant reviews for our analysis.
+# NOTE: This script is to be used ONLY if obtaining the dataset from the "https://business.yelp.com/data/resources/open-dataset/" website, 
+# instead of using the established "sitdown_reviews.csv" found in the Data folder of this repository. 
 
 
 # Import tarfile so that we can work with the .tar archive containing  the original Yelp JSON dataset.
