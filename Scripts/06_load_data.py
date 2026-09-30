@@ -1,4 +1,4 @@
-# This file is used to load the file into VS code
+# This file is used to load the sitdown_reviews.csv file into VS code. 
 import pandas as pd
 
 file_path = "Data/sitdown_reviews.csv"
