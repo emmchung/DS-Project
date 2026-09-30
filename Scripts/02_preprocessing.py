@@ -1,5 +1,5 @@
 # This is a script to preprocess the data file obtained from [Reference 3: https://business.yelp.com/data/resources/open-dataset/] Yelp open dataset: review.json and business.json.
-# The input to this script is the bundled Yelp-JSON file obtained from running `01_data_extraction.py`.
+# The input to this script is the bundled Yelp-JSON file obtained from running 01_data_extraction.py. The output of this file is restaurants.csv which is used in the following script 03_preprocessing_2.py
 
 import pandas as pd
 import os
