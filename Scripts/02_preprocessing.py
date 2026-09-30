@@ -1,4 +1,4 @@
-# Preprocessing Data files obtained from [Reference 3] Yelp open dataset: review.json and business.json.
+# This is a script to preprocess the data file obtained from [Reference 3: ] Yelp open dataset: review.json and business.json.
 import pandas as pd
 import os
 
