@@ -79,7 +79,7 @@ The following steps to reproduce this model from the original dataset can be fou
 1. Go to https://business.yelp.com/data/resources/open-dataset/
 2. Download JSON
 3. Unzip the File: this contains a review.json file (review text) and business.json file (business_level listings)
-4. Place these data files into this repository in the `Data` folder. **Note:** The path to these files should match the path in the scripts in the `Scripts` folder. 
+4. Place these data files into this repository in the `Data` folder. **Note:** The path to these files should match the path in the scripts in the `Scripts` folder: "Data"
 5. Within the scripts folder of this repository, use (1) Business ID Preprocessing and (2) Review Text Preprocessing to filter only for sitdown restaurants.
 6. Use (4) Cut down the data set script to cut the data set using random selection.
 7. End result: sitdown_review.csv containing 32000 rows (this should be identical to the sitdown_reviews.csv in the Data folder in this repository)
