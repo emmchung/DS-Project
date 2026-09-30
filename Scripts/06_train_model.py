@@ -19,7 +19,7 @@ Outputs:
 - Figures and summary files saved to MODEL_OUTPUT
 
 Required packages:
-pandas, numpy, nltk, scikit-learn, matplotlib, joblib
+pandas, numpy, nltk, scikit-learn, matplotlib
 """
 # Import standard Python libraries for file handling, text processing,
 # data analysis, sentiment analysis, machine learning, and visualization.
@@ -27,7 +27,6 @@ import os
 import re
 from pathlib import Path
 
-import joblib
 import matplotlib
 import nltk
 import pandas as pd
@@ -50,7 +49,6 @@ nltk.download("vader_lexicon", quiet=True)
 # Define the input dataset, output directory, and location for the saved model.
 DATA_PATH = Path("Data/sitdown_reviews_25mb.csv")
 OUTPUT_DIR = Path("MODEL_OUTPUT")
-MODEL_PATH = OUTPUT_DIR / "restaurant_review_model.joblib"
 
 
 def main():
@@ -458,9 +456,6 @@ def main():
     print("\nClassification report:")
     print(classification_report(y_test, y_pred))
 
-    # Save the trained text classification pipeline for future use.
-    joblib.dump(model, MODEL_PATH)
-    print(f"\nSaved model to: {MODEL_PATH}")
 
     # Compile the primary aspect-analysis results into a summary table containing
     # review counts, Pearson correlations, and regression coefficients.
