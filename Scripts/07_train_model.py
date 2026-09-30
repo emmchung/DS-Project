@@ -10,7 +10,7 @@ scores at the restaurant level, and uses multiple linear regression to examine
 the relationship between aspect sentiment and overall restaurant Yelp ratings.
 
 Input:
-- Data/sitdown_reviews_joined2.csv
+- Data/sitdown_reviews.csv
 
 Outputs:
 - Restaurant-level aspect sentiment results
@@ -47,7 +47,7 @@ import matplotlib.pyplot as plt
 nltk.download("vader_lexicon", quiet=True)
 
 # Define the input dataset, output directory, and location for the saved model.
-DATA_PATH = Path("Data/sitdown_reviews_joined2.csv")
+DATA_PATH = Path("Data/sitdown_reviews.csv")
 OUTPUT_DIR = Path("MODEL_OUTPUT")
 
 
