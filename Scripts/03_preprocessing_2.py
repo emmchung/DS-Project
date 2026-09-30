@@ -3,8 +3,8 @@
 
 import pandas as pd
 
-path = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants.csv"
-output = r"C:\Users\bryso\Downloads\Yelp-JSON\restaurants_sitdown_only.csv"
+path = "Data\Yelp-JSON\restaurants.csv"
+output = "Data\Yelp-JSON\restaurants_sitdown_only.csv"
 
 restaurants = pd.read_csv(path)
 
