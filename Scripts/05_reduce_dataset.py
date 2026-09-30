@@ -1,4 +1,6 @@
 # This is the script used to cut down the dataset into a usable, 25 mb size.
+# The input to this file is sitdown_reviews_joined2.csv obtained from 04_merge_reviews_business.py and the output is sitdown_reviews.csv, the final cut dataset used for modeling. 
+
 import pandas as pd
 import os
 
