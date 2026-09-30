@@ -85,5 +85,4 @@ The following steps to reproduce this model from the original dataset can be fou
 7. End result: sitdown_review.csv containing 32000 rows (this should be identical to the sitdown_reviews.csv in the Data folder in this repository)
 
 The preprocessing scripts in the `Scripts` folder document the process used to transform the original Yelp data into the processed dataset used for analysis.
-
 After preprocessing the original Yelp data, run the remaining preprocessing scripts in the order described in the repository map to produce the final analysis dataset.
