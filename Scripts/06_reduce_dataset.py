@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 input_file = r"C:\Users\bryso\Downloads\Yelp-JSON\sitdown_reviews_joined2.csv"
-output_file = r"C:\Users\bryso\Downloads\Yelp-JSON\sitdown_reviews_25mb.csv"
+output_file = r"C:\Users\bryso\Downloads\Yelp-JSON\sitdown_reviews.csv"
 
 rows = []
 size = 0
