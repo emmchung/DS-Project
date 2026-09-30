@@ -71,7 +71,9 @@ python3 "Scripts/05_train_model.py"
 
 ### Option 2: Reproduce Data Acquisition and Preprocessing
 
-The original data were obtained from the Yelp Open Dataset. Because the complete Yelp dataset is too large to store in this GitHub repository, the original Yelp JSON files must be downloaded separately to reproduce the full data acquisition process.
+Note: The original data were obtained from the Yelp Open Dataset. Because the complete Yelp dataset is too large to store in this GitHub repository, the original Yelp JSON files must be downloaded separately to reproduce the full data acquisition process.
+
+To reproduce results from the original data set: 
 
 The preprocessing scripts in the `Scripts` folder document the process used to transform the original Yelp data into the processed dataset used for analysis.
 
@@ -82,7 +84,5 @@ The initial restaurant extraction script:
 - Processes the large review dataset in chunks of 100,000 reviews.
 - Retains reviews associated with restaurant business IDs.
 - Saves the resulting restaurant data and review chunks as CSV files.
-
-The file paths in the original preprocessing script reflect the local computer used during data acquisition. To rerun this script, users must update the `business`, `reviews`, and `output` paths at the beginning of the script to match the locations of the Yelp files on their own computer.
 
 After preprocessing the original Yelp data, run the remaining preprocessing scripts in the order described in the repository map to produce the final analysis dataset.
