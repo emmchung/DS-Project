@@ -7,7 +7,7 @@
 - Git/GitHub
 - Windows 11 / macOS 26.2 
 ### Add-on packages
-Pandas, numpy, nltk, scikit-learn, matplotlib, job lib
+Pandas, numpy, nltk, scikit-learn, matplotlib
 ### Platform used
 Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated terminal
 ## Map of Documentation
@@ -19,11 +19,13 @@ Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated termina
     * sitdown_reviews.csv: raw data file
   * Scripts : contains all source code for the project. 
     * 01_data_extraction.py
-    * 02_load_data.py
-    * 03_preprocessing.py
+    * 02_preprocessing.py
+    * 03_preprocessing_2.py
     * 04_merge_reviews_business.py
     * 05_reduce_dataset.py
-    * 06_train_model.py
+    * 06_load_data.py
+    * 07_train_model.py
+
   * License
   * MODEL_OUTPUT
     * aspect_regression_coefficients.png
