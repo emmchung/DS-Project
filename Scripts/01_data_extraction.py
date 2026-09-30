@@ -10,8 +10,8 @@
 import tarfile
 import os
 
-tar_path = r"C:\Users\bryso\Downloads\Yelp-Json.tar"
-extract_to = r"C:\Users\bryso\Downloads\Yelp-JSON"
+tar_path = "Data\Yelp-Json.tar"
+extract_to = "Data\Yelp-JSON"
 
 os.makedirs(extract_to, exist_ok=True)
 
