@@ -1,7 +1,7 @@
 # This file is used to load the file into VS code
 import pandas as pd
 
-file_path = "Data/sitdown_reviews_joined2.csv"
+file_path = "Data/sitdown_reviews.csv"
 
 df = pd.read_csv(file_path)
 
