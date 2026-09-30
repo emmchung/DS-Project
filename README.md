@@ -5,6 +5,7 @@
 - Visual Studio Code (VS Code)
 - Python 3.12
 - Git/GitHub
+- Windows 11 / macOS 26.2 
 ### Add-on packages
 Pandas, numpy, nltk, scikit-learn, matplotlib, job lib
 ### Platform used
