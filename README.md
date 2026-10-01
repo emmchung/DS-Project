@@ -1,5 +1,16 @@
 # DS-Project
 ## Contents
+This repository contains the code, data, documentation, and results for our analysis of Yelp reviews from sit-down restaurants. The project uses natural language processing and machine learning to analyze review text based on three aspects of the restaurant experience: quality, price, and convenience.
+
+The repository includes:
+- The processed Yelp review dataset used for analysis
+- Python scripts for data extraction, preprocessing, and modeling
+- Documentation describing the data and analysis process
+- Model outputs, including figures, performance metrics, and summary results
+- References and project documentation needed to understand and reproduce the analysis
+
+The primary analysis uses sentiment scores for quality, price, and convenience to examine their relationship with overall Yelp ratings. A secondary model uses the full review text to predict overall Yelp star ratings.
+
 ## Software and Platform Selection
 ### Software Types Used
 - Visual Studio Code (VS Code)
