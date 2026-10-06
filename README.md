@@ -18,7 +18,11 @@ The primary analysis uses sentiment scores for quality, price, and convenience t
 - Git/GitHub
 - Windows 11 / macOS 26.2 
 ### Add-on packages
-Pandas, numpy, nltk, scikit-learn, matplotlib
+- pandas 3.0.3
+- numpy 1.26.4
+- nltk 3.8.1
+- scikit-learn 1.9.0
+- matplotlib 3.8.0
 ### Platform used
 Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated terminal, running on Windows 11 and macOS 26.2.
 ## Map of Documentation
@@ -52,7 +56,12 @@ Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated termina
 ### Software and Environment
 - Python 3.12
 - Visual Studio Code (VS Code)
-- Required Python packages: pandas, nltk, scikit-learn, matplotlib, joblib
+- Required Python packages:
+  - pandas 3.0.3
+  - numpy 1.26.4
+  - nltk 3.8.1
+  - scikit-learn 1.9.0
+  - matplotlib 3.8.0
 
 Install the required packages by running:
 
