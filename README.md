@@ -20,7 +20,7 @@ The primary analysis uses sentiment scores for quality, price, and convenience t
 ### Add-on packages
 Pandas, numpy, nltk, scikit-learn, matplotlib
 ### Platform used
-Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated terminal
+Visual Studio Code (VS Code) with Python 3.12 and the VS Code integrated terminal, running on Windows 11 and macOS 26.2.
 ## Map of Documentation
 * DS Project Repository
   * README.md
